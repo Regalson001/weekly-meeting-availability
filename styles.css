@@ -1,0 +1,59 @@
+:root {
+  --color0: #ff4d4d;
+  --color1: #ffa64d;
+  --color2: #ffff4d;
+  --color3: #a6ff4d;
+  --color4: #4dffa6;
+  --color5: #4d4dff;
+  --solid-border: 2px solid #333;
+  --dashed-border: 2px dashed #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+.available-0 { background-color: var(--color0); }
+.available-1 { background-color: var(--color1); }
+.available-2 { background-color: var(--color2); }
+.available-3 { background-color: var(--color3); }
+.available-4 { background-color: var(--color4); }
+.available-5 { background-color: var(--color5); }
+
+#legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+#legend-gradient {
+  width: 200px;
+  height: 20px;
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0%, var(--color0) 16%,
+    var(--color1) 16%, var(--color1) 33%,
+    var(--color2) 33%, var(--color2) 50%,
+    var(--color3) 50%, var(--color3) 66%,
+    var(--color4) 66%, var(--color4) 83%,
+    var(--color5) 83%, var(--color5) 100%
+  );
+}
